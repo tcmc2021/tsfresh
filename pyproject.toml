@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "tsfresh"
+version = "0.18.0-666"
+description = "As a workaround patch for milelync"
+authors = ["tcmc2021 <theo.chang@mile.cloud>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+requests = ">=2.9.1"
+numpy = ">=1.15.1"
+pandas = ">=0.25.0"
+scipy = ">=1.2.0"
+statsmodels = ">=0.9.0"
+patsy = ">=0.4.1"
+scikit-learn = ">=0.22.0"
+tqdm = ">=4.10.0"
+dask = {version = ">=2.9.0", extras = ["dataframe"]}
+distributed = ">=2.11.0"
+stumpy = ">=1.7.2"
+cloudpickle = "^2.0.0"
+matrixprofile = { git = "https://github.com/tcmc2021/matrixprofile.git", tag = "v1.1.10-666cm" }
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
